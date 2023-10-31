@@ -13,6 +13,7 @@ import (
 	"fmt"
 	"io"
 	"net"
+	"stickyPacketTcp/stickyPackage/common"
 )
 
 // process 处理(读取)client传过的数据
@@ -21,10 +22,9 @@ func process(conn net.Conn) {
 
 	// 起一个读取器
 	reader := bufio.NewReader(conn)
-	var temp [1024]byte
 
 	for {
-		n, err := reader.Read(temp[:]) // 将数据写入temp中，并返回读入的字节数
+		str, err := common.TcpGotDecoding(reader)
 
 		if err == io.EOF { // 读完了或者文件关闭了
 			break
@@ -35,10 +35,7 @@ func process(conn net.Conn) {
 			break
 		}
 
-		restr := string(temp[:n])
-
-		fmt.Println("收到client发送的数据:", restr)
-
+		fmt.Println("收到client发送的数据:", str)
 	}
 
 }

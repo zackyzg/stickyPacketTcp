@@ -12,3 +12,49 @@ Demonstration of TCP packet sticking solution
 
 封包：封包就是给一段数据加上包头，这样一来数据包就分为包头和包体两部分内容了(过滤非法包时封包会加入"包尾"内容)
 。包头部分的长度是固定的，并且它存储了包体的长度，根据包头长度固定以及包头中含有包体长度的变量就能正确的拆分出一个完整的数据包。
+
+运行结果如下所示
+收到的消息为完整数据，未出现的消息粘包
+
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
+收到client发送的数据: HELLO,HELLO,HELLO There is a 60% probability that the population will be infected with the disease.
+HELLO,HELLO,HELLO
